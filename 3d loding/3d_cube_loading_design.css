@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -49,21 +50,40 @@ h1 {
 }
 
 /* Positioning cube faces */
-.front  { transform: rotateY(0deg) translateZ(50px); }
-.back   { transform: rotateY(180deg) translateZ(50px); }
-.left   { transform: rotateY(-90deg) translateZ(50px); }
-.right  { transform: rotateY(90deg) translateZ(50px); }
-.top    { transform: rotateX(90deg) translateZ(50px); }
-.bottom { transform: rotateX(-90deg) translateZ(50px); }
+.front {
+    transform: rotateY(0deg) translateZ(50px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
 
 /* Cube rotation animation */
 @keyframes rotateCube {
     0% {
         transform: rotateX(45deg) rotateY(45deg);
     }
+
     50% {
         transform: rotateX(405deg) rotateY(405deg);
     }
+
     100% {
         transform: rotateX(765deg) rotateY(765deg);
     }
